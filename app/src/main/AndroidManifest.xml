@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+          package="tecaa.in.com.myapplication.tecsaa">
+
+    <application
+            android:allowBackup="true"
+            android:allowClearUserData="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true"
+         >
+        <activity android:name=".CreateAlbumActivity">
+
+        </activity>
+        <activity
+                android:name=".Admin.AdminMainDashActivity"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".Login.LoginActivity"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".Admin.TeacherRegistationActivity"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".Admin.StudentRegistrationActivity"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".GallaryDownloadActivity"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".EditProfileActivity"
+                android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+                android:name=".ui.gallary.GallaryFragment"
+                android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+                android:name=".MainDashBoardActivity"
+                android:label="Main Dashboard"
+                android:theme="@style/AppTheme" />
+        <activity android:name=".HomeScreenActivity" />
+        <activity
+                android:name=".SplashActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+</manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiuent_background"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_height="100dp">
+    </ImageView>
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/teacher"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Teacher Registration"
+        android:textColor="#757272"
+        android:background="@drawable/edit_background"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/teacher"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:text="Student Registration"
+        android:textColor="#757272"
+        android:textSize="15sp"
+        android:id="@+id/student"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edit_background"
+        android:layout_marginLeft="70dp"
+        android:layout_height="50dp"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@+id/student"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="70dp"
+        android:text="Gallery"
+        android:textColor="#757272"
+        android:textSize="15sp"
+        android:id="@+id/gallery"
+        android:drawableTint="@color/white"
+        android:background="@drawable/edit_background"
+        android:layout_marginLeft="70dp"
+        android:layout_height="50dp"></Button>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_height="50dp"></ProgressBar>
+
+
+</RelativeLayout>

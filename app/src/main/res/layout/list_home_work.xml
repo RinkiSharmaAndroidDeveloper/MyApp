@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/darkGray"
+        android:id="@+id/layout_relative"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="27 Mar 2020 | Friday"
+            android:gravity="center"
+            android:id="@+id/date"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="20dp"
+            card_view:cardBackgroundColor="@color/color_white"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:id="@+id/name_layout"
+
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:text="Anne Frank"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/name"
+                    android:layout_weight="1.7"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/darkGray"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/work_home_testing"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:text="!3:50"
+                    android:layout_width="wrap_content"
+                    android:textSize="15sp"
+                    android:id="@+id/time"
+
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/darkGray"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:id="@+id/share"
+                    android:layout_marginLeft="10dp"
+                    android:padding="2dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/share"
+                    android:layout_height="20dp">
+                </ImageView>
+
+                    <ImageView
+                        android:id="@+id/delete"
+                        android:layout_width="19dp"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/delete"></ImageView>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_below="@+id/name_layout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/line"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="1dp"></View>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_text"
+                    android:layout_below="@+id/line"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:text="Home Work For Tomorrow -"
+                    android:layout_width="wrap_content"
+                    android:textSize="17sp"
+                    android:id="@+id/title"
+
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/darkGray"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+
+
+                    android:layout_height="wrap_content">
+                </TextView>
+                <EditText
+                    android:text="Home Work For Tomorrow -"
+                    android:layout_width="match_parent"
+                    android:textSize="17sp"
+                    android:id="@+id/title_edit"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/darkGray"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:layout_below="@+id/line"
+                    android:layout_height="wrap_content">
+                </EditText>
+                <EditText
+                    android:hint="http_url.com"
+                    android:layout_width="match_parent"
+                    android:textSize="13sp"
+                    android:background="@null"
+                    android:id="@+id/text_edit"
+                    android:textColorLink="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+android:visibility="gone"
+                    android:textColor="@color/lightGray"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/title_edit"
+                    android:layout_height="wrap_content">
+                </EditText>
+
+                <TextView
+                    android:text="http_url.com"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:id="@+id/link"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/subject"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:text="http_url.com"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:id="@+id/text"
+                    android:textColorLink="@color/colorPrimary"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:linksClickable="true"
+                    android:autoLink="web"
+                    android:textColor="@color/lightGray"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/title"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/image"
+                    android:src="@drawable/school"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/text_edit"
+                    android:layout_height="150dp">
+                </ImageView>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+          android:layout_below="@+id/ll_text"
+                    android:id="@+id/view_two"
+                    android:background="@color/darkGray"
+                    android:layout_height="1dp"></View>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/view_two"
+
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/text_spinner"
+
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="100dp"
+                            android:text="A"
+                            android:textColor="@color/darkGray"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:id="@+id/class_spin_text"
+                            android:padding="2dp"
+                            android:layout_marginBottom="2dp"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+
+
+                            android:background="@color/darkGray"
+                            android:layout_height="match_parent"></View>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:textColor="@color/darkGray"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:id="@+id/subject_spin_text"
+                            android:padding="2dp"
+                            android:layout_alignRight="@+id/view_one"
+                            android:layout_marginBottom="2dp"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+
+
+                            android:background="@color/darkGray"
+                            android:layout_height="match_parent"></View>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:textColor="@color/darkGray"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+
+                            android:id="@+id/section_spin_text"
+
+                            android:padding="2dp"
+                            android:layout_alignRight="@+id/view_one"
+                            android:layout_marginBottom="2dp"/>
+                    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+
+    android:visibility="gone"
+    android:id="@+id/spinner_Layout"
+    android:layout_height="wrap_content">
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/class_spin"
+                        android:padding="2dp"
+                        android:layout_marginBottom="2dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/view_one"
+                        android:layout_alignRight="@+id/class_spin"
+                        android:background="@color/darkGray"
+                        android:layout_height="match_parent"></View>
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+
+                        android:id="@+id/section_spin"
+
+                        android:padding="2dp"
+                        android:layout_alignRight="@+id/view_one"
+                        android:layout_marginBottom="2dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/view_one_section"
+                        android:layout_alignRight="@+id/section_spin"
+                        android:background="@color/darkGray"
+                        android:layout_height="match_parent"></View>
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/subject_spin"
+                        android:padding="2dp"
+                        android:layout_alignRight="@+id/view_one"
+                        android:layout_marginBottom="2dp"/>
+</LinearLayout>
+                    <Button
+                        android:text="Edit"
+                        android:layout_width="70dp"
+                        android:textSize="14sp"
+                        android:id="@+id/button_edit"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/darkGray"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

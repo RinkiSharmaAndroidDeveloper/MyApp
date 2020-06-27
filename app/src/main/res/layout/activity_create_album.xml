@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/gradiuent_background"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/gallery"
+                android:tint="@color/white"
+                android:padding="5dp"
+                android:id="@+id/class_work_image"
+                android:layout_height="30dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Create Gallery"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_toRightOf="@+id/class_work_image"
+                android:layout_height="match_parent">
+
+
+            </TextView>
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/tools"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            card_view:cardBackgroundColor="@color/color_white"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:id="@+id/edit_text"
+                android:hint="Enter album name"
+                android:layout_height="40dp">
+
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/gradiuent_background"
+                android:layout_height="1dp">
+
+            </View>
+                <Button
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dob_gradiant_color"
+                        android:text="Create Album"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:id="@+id/manual_submit"
+                        android:layout_margin="5dp"/>
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:id="@+id/progress"
+                    android:layout_height="50dp"></ProgressBar>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewGallary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        card_view:cardCornerRadius="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+
+        card_view:cardElevation="10dp"
+        card_view:cardUseCompatPadding="true"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/back_bone"
+    android:background="@drawable/edit_rectanguler_box"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/darkGray"
+        android:textSize="18sp"
+        android:text="Name"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:layout_height="match_parent"></TextView>
+
+    <Button
+        android:text="Edit"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/button_Edit"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/darkGray"
+        android:background="@drawable/eidt_with_back_color"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:text="Present"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/button_present"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/button_absent"
+        android:gravity="center"
+        android:backgroundTint="@color/green"
+        android:background="@drawable/eidt_with_back_color"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"/>
+    <Button
+        android:text="Absent"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/button_absent"
+        android:layout_marginRight="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/red"
+        android:background="@drawable/eidt_with_back_color"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_height="40dp"/>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none"
+        >
+        <item
+            android:id="@+id/nav_menu_home_work"
+            android:icon="@drawable/homework"
+            android:title="@string/menu_home_work" />
+        <item
+            android:id="@+id/nav_menu_requirment"
+            android:icon="@drawable/requirments"
+            android:title="@string/menu_requirment" />
+        <item
+            android:id="@+id/nav_menu_class_schedule"
+            android:icon="@drawable/class_schedule"
+            android:title="@string/menu_class_schedule" />
+        <item
+            android:id="@+id/nav_menu_attendance"
+            android:icon="@drawable/attendence"
+            android:title="@string/menu_attendance" />
+        <item
+            android:id="@+id/nav_menu_activity"
+            android:icon="@drawable/activity_"
+            android:title="@string/menu_activity" />
+        <item
+            android:id="@+id/nav_menu_class_work"
+            android:icon="@drawable/class_work"
+            android:title="@string/menu_class_work" />
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:background="?android:attr/listDivider"
+
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/drawer_item_settings"
+            android:icon="@drawable/gallery"
+            android:title="@string/menu_gallery" >
+        </item>
+    </group>
+        <menu>
+            <item
+                android:id="@+id/nav_menu_syllabus"
+                android:icon="@drawable/syllabus"
+                android:title="@string/menu_syllabus" />
+            <item
+                android:id="@+id/nav_menu_exam"
+                android:icon="@drawable/exam"
+                android:title="@string/menu_exam" />
+            <item
+                android:id="@+id/nav_menu_results"
+                android:icon="@drawable/result"
+                android:title="@string/menu_results" />
+        </menu>
+    <group
+        android:id="@+id/menu_bottom_one"
+        android:background="?android:attr/listDivider"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_menu_bus_status"
+            android:icon="@drawable/bus"
+            android:title="@string/menu_bus_status" />
+        <item
+            android:id="@+id/nav_menu_fees"
+            android:icon="@drawable/bus"
+            android:title="@string/menu_fees" />
+        <item
+            android:id="@+id/nav_menu_contact_us"
+            android:icon="@drawable/contact_us"
+            android:title="@string/menu_contact_us" />
+        <item
+            android:id="@+id/nav_menu_about_us"
+            android:icon="@drawable/contact_us"
+            android:title="@string/menu_about_us" />
+            <item
+                android:id="@+id/nav_menu_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/menu_logout" />
+
+    </group>
+
+</menu>

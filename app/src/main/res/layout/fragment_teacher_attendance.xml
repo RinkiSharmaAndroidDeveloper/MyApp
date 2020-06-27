@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/gradiuent_background"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/exam"
+            android:tint="@color/white"
+            android:padding="5dp"
+            android:id="@+id/class_work_image"
+            android:layout_height="30dp"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/menu_attendance"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:id="@+id/front_name"
+            android:layout_toRightOf="@+id/class_work_image"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/class_spin"
+            android:padding="2dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/darkGray"
+            android:text="Select Date"
+            android:layout_weight="1"
+            android:layout_marginBottom="2dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/view_one"
+            android:layout_alignRight="@+id/class_spin"
+            android:background="@color/darkGray"
+            android:layout_height="match_parent"></View>
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/section_spin"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:layout_alignRight="@+id/view_one"
+            android:layout_marginBottom="2dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/view_one_section"
+            android:layout_alignRight="@+id/section_spin"
+            android:background="@color/darkGray"
+            android:layout_height="match_parent"></View>
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/subject_spin"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:layout_alignRight="@+id/view_one"
+            android:layout_marginBottom="2dp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_height="50dp"></ProgressBar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:nestedScrollingEnabled="false"
+        android:background="@color/backLightWhite"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/darkGray"
+        android:id="@+id/submit_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="SUBMIT"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_height="match_parent">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
